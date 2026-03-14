@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ihcil@OUC - 实验室</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo">Ihcil@OUC</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">首页</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#research">研究方向</a></li>
+                <li><a href="#team">团队成员</a></li>
+                <li><a href="#papers">发表论文</a></li>
+                <li><a href="#news">近期动态</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页横幅 -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Ihcil@OUC</h1>
+                <p>本实验室立足于物理海洋学、气象学与海洋工程学的交叉前沿，以海洋与大气交互界面为核心研究对象。我们致力于揭示这一关键边界层中能量与物质交换的核心动力过程，深化对海气通量、海浪生成与演化等关键海洋气象要素的生成机理与演变规律的理解，并发展其精准预报理论与方法。
+                </p>
+                <div class="hero-buttons">
+                    <a href="#research" class="btn btn-primary">了解我们的研究</a>
+                    <a href="#team" class="btn btn-secondary">认识团队</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>关于我们</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>实验室的终极科学愿景是构建一个从机理认知到智能预报的完整研究闭环，为应对极端天气气候事件、保障海洋安全及深化地球系统科学研究提供坚实的科学支撑与技术解决方案。</p>
+                    <p>我们聚焦于海洋与大气交互界面的核心动力过程，核心目标是深化对关键海洋气象要素的生成机理、演变规律及精准预报研究。这一领域是物理海洋学、气象学与海洋工程学高度交叉的前沿阵地。</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1454789476662-53eb23ba5907?w=600" alt="海洋研究">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 研究方向 -->
+    <section id="research" class="research">
+        <div class="container">
+            <div class="section-header">
+                <h2>研究方向</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                        </svg>
+                    </div>
+                    <h3>海洋预报</h3>
+                    <p>聚焦于海洋与大气交互界面的核心动力过程，关注风如何驱动海浪的生成与发展——即风浪生成、非线性相互作用及涌浪传播的物理机制，研究在台风、温带气旋等极端天气系统影响下，海洋动力环境的剧烈响应。
+                    </p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3>雷达预报</h3>
+                    <p>致力于将前沿人工智能技术与雷达气象学深度融合，核心研究方向为强对流临近预报。利用大语言模型（LLM）及相关架构处理海量时空数据，挖掘强对流演化的复杂模式。</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3>智能预警</h3>
+                    <p>针对极端天气样本稀缺的痛点，专项研发基于小模型的小样本学习方法，实现高效、精准的极少样本预报。开展合成雷达反演研究，通过AI算法弥补观测盲区，构建更智能的极端天气预警系统。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 团队成员 -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>团队成员</h2>
+                <div class="divider"></div>
+            </div>
+
+            <!-- 导师介绍 -->
+            <div class="advisor-section">
+                <div class="advisor-card">
+                    <div class="advisor-avatar">
+                        <img src="authors/Wei Zhang/avatar.jpg" alt="张巍教授">
+                    </div>
+                    <div class="advisor-info">
+                        <h3>张巍</h3>
+                        <p class="advisor-title">教授 / 博士生导师</p>
+                        <div class="advisor-bio">
+                            <p>中国海洋大学信息科学与工程学部教授，博士生导师。主要从事海洋大气相互作用、人工智能气象预报等交叉领域研究。在Remote
+                                Sensing、IEEE等国际顶级期刊发表多篇高水平论文，主持多项国家级科研项目。</p>
+                        </div>
+                        <div class="advisor-links">
+                            <a href="https://scholar.google.com/citations?user=8RXF4Q4AAAAJ&hl=en" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5 12 0z" />
+                                </svg>
+                                Google Scholar
+                            </a>
+                            <a href="https://weizhang.github.io/index.html" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                    <polyline points="9 22 9 12 15 12 15 22" />
+                                </svg>
+                                个人主页
+                            </a>
+                            <a href="mailto:weizhang@ouc.edu.cn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                                Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 学生成员 -->
+            <div class="section-header" style="margin-top: 80px;">
+                <h2>研究生</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="team-grid">
+                <!-- 2023级研究生 -->
+                <div class="team-card" data-name="马宏博"
+                    data-bio="喜爱数学建模与人工智能各种新技术，主要研究方向是天气雷达合成，发表SCI二区《Robust Synthesis Weather Radar from Satellite Imagery: A Light/Dark Classification and Dual-Path Processing Approach》文章。热爱探索，热衷于新事物。喜爱历史，喜欢总结。"
+                    data-email="1533177806@qq.com" data-role="2023级硕士">
+                    <div class="team-avatar">
+                        <img src="authors/Hongbo Ma/avatar.jpg" alt="马宏博">
+                    </div>
+                    <div class="team-info">
+                        <h3>马宏博</h3>
+                        <p class="team-role">2023级硕士</p>
+                        <p class="team-email">1533177806@qq.com</p>
+                    </div>
+                    <div class="team-hover-info">
+                        <h4>马宏博</h4>
+                        <div class="hover-email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            1533177806@qq.com
+                        </div>
+                        <div class="hover-bio">喜爱数学建模与人工智能各种新技术，主要研究方向是天气雷达合成，发表SCI二区《Robust Synthesis Weather Radar
+                            from Satellite Imagery: A Light/Dark Classification and Dual-Path Processing
+                            Approach》文章。热爱探索，热衷于新事物。喜爱历史，喜欢总结。</div>
+                    </div>
+                </div>
+
+                <div class="team-card" data-name="王凯龙" data-bio="中国海洋大学硕士研究生，研究聚焦于AI驱动的强对流天气临近预报。对科学探索和生活都充满热情。"
+                    data-email="w1842678637@163.com" data-role="2023级硕士">
+                    <div class="team-avatar">
+                        <img src="authors/Kailong Wang/avatar.jpg" alt="王凯龙">
+                    </div>
+                    <div class="team-info">
+                        <h3>王凯龙</h3>
+                        <p class="team-role">2023级硕士</p>
+                        <p class="team-email">w1842678637@163.com</p>
+                    </div>
+                    <div class="team-hover-info">
+                        <h4>王凯龙</h4>
+                        <div class="hover-email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            w1842678637@163.com
+                        </div>
+                        <div class="hover-bio">中国海洋大学硕士研究生，研究聚焦于AI驱动的强对流天气临近预报。对科学探索和生活都充满热情。</div>
+                    </div>
+                </div>
+
+                <div class="team-card" data-name="刘强" data-bio="中国海洋大学攻读硕士学位的研究生，师从张巍教授。研究方向主要聚焦于海面风场与波场的重建与预报。"
+                    data-email="lq3600@stu.ouc.edu.cn" data-role="2023级硕士">
+                    <div class="team-avatar">
+                        <img src="authors/Qiang Liu/avatar.jpg" alt="刘强">
+                    </div>
+                    <div class="team-info">
+                        <h3>刘强</h3>
+                        <p class="team-role">2023级硕士</p>
+                        <p class="team-email">lq3600@stu.ouc.edu.cn</p>
+                    </div>
+                    <div class="team-hover-info">
+                        <h4>刘强</h4>
+                        <div class="hover-email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            lq3600@stu.ouc.edu.cn
+                        </div>
+                        <div class="hover-bio">中国海洋大学攻读硕士学位的研究生，师从张巍教授。研究方向主要聚焦于海面风场与波场的重建与预报。</div>
+                    </div>
+                </div>
+
+                <div class="team-card" data-name="徐志林" data-bio="中国海洋大学计算机技术专业的硕士研究生，研究重点是人工智能海洋学。"
+                    data-email="xuzhilin@stu.ouc.edu.cn" data-role="2023级硕士">
+                    <div class="team-avatar">
+                        <img src="authors/Zhilin Xu/avatar.jpg" alt="徐志林">
+                    </div>
+                    <div class="team-info">
+                        <h3>徐志林</h3>
+                        <p class="team-role">2023级硕士</p>
+                        <p class="team-email">xuzhilin@stu.ouc.edu.cn</p>
+                    </div>
+                    <div class="team-hover-info">
+                        <h4>徐志林</h4>
+                        <div class="hover-email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            xuzhilin@stu.ouc.edu.cn
+                        </div>
+                        <div class="hover-bio">中国海洋大学计算机技术专业的硕士研究生，研究重点是人工智能海洋学。</div>
+                    </div>
+                </div>
+
+                <div class="team-card" data-name="张嘉兴"
+                    data-bio="热爱音乐，中国海洋大学软件工程专业的硕士研究生，研究重点是卫星反演研究，已在ICGIP会议上发表论文。目前从事GPU驱动相关的工作。"
+                    data-email="zhangjiaxing@stu.ouc.edu.cn" data-role="2023级硕士">
+                    <div class="team-avatar">
+                        <img src="authors/Jiaxing Zhang/avatar.jpg" alt="张嘉兴">
+                    </div>
+                    <div class="team-info">
+                        <h3>张嘉兴</h3>
+                        <p class="team-role">2023级硕士</p>
+                        <p class="team-email">zhangjiaxing@stu.ouc.edu.cn</p>
+                    </div>
+                    <div class="team-hover-info">
+                        <h4>张嘉兴</h4>
+                        <div class="hover-email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            zhangjiaxing@stu.ouc.edu.cn
+                        </div>
+                        <div class="hover-bio">热爱音乐，中国海洋大学软件工程专业的硕士研究生，研究重点是卫星反演研究，已在ICGIP会议上发表论文。目前从事GPU驱动相关的工作。</div>
+                    </div>
+                </div>
+
+                <div class="team-card" data-name="王林涛" data-bio="中国海洋大学攻读硕士学位，师从张伟教授。本科毕业于青岛大学信息安全专业。目前的研究聚焦于强对流临近预报。"
+                    data-email="wlt@stu.ouc.edu.cn" data-role="2023级硕士">
+                    <div class="team-avatar">
+                        <img src="authors/Lintao Wang/avatar.jpg" alt="王林涛">
+                    </div>
+                    <div class="team-info">
+                        <h3>王林涛</h3>
+                        <p class="team-role">2023级硕士</p>
+                        <p class="team-email">wlt@stu.ouc.edu.cn</p>
+                    </div>
+                    <div class="team-hover-info">
+                        <h4>王林涛</h4>
+                        <div class="hover-email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            wlt@stu.ouc.edu.cn
+                        </div>
+                        <div class="hover-bio">中国海洋大学攻读硕士学位，师从张伟教授。本科毕业于青岛大学信息安全专业。目前的研究聚焦于强对流临近预报。</div>
+                    </div>
+                </div>
+
+                <div class="team-card" data-name="刘晓冉" data-bio="强对流临近预报方向，码本第一代继承人。"
+                    data-email="21230213184@stu.ouc.edu.cn" data-role="2023级硕士">
+                    <div class="team-avatar">
+                        <img src="authors/Xiaoran Liu/avatar.jpg" alt="刘晓冉">
+                    </div>
+                    <div class="team-info">
+                        <h3>刘晓冉</h3>
+                        <p class="team-role">2023级硕士</p>
+                        <p class="team-email">21230213184@stu.ouc.edu.cn</p>
+                    </div>
+                    <div class="team-hover-info">
+                        <h4>刘晓冉</h4>
+                        <div class="hover-email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            21230213184@stu.ouc.edu.cn
+                        </div>
+                        <div class="hover-bio">强对流临近预报方向，码本第一代继承人。</div>
+                    </div>
+                </div>
+
+                <!-- 2024级研究生 -->
+                <div class="team-card" data-name="郭梦珂"
+                    data-bio="中国海洋大学张伟教授指导下的硕士研究生，本科毕业于郑州大学计算机科学与技术专业。研究领域是海上强对流天气预报。" data-email="gmk0629@163.com"
+                    data-role="2024级硕士">
+                    <div class="team-avatar">
+                        <img src="authors/Mengke Guo/avatar.jpg" alt="郭梦珂">
+                    </div>
+                    <div class="team-info">
+                        <h3>郭梦珂</h3>
+                        <p class="team-role">2024级硕士</p>
+                        <p class="team-email">gmk0629@163.com</p>
+                    </div>
+                    <div class="team-hover-info">
+                        <h4>郭梦珂</h4>
+                        <div class="hover-email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            gmk0629@163.com
+                        </div>
+                        <div class="hover-bio">中国海洋大学张伟教授指导下的硕士研究生，本科毕业于郑州大学计算机科学与技术专业。研究领域是海上强对流天气预报。</div>
+                    </div>
+                </div>
+
+                <div class="team-card" data-name="王贤俊" data-bio="雷达反演组的二年级研究生，主要从事雷暴大风相关研究。"
+                    data-email="479960826@qq.com" data-role="2024级硕士">
+                    <div class="team-avatar">
+                        <img src="authors/Xianjun Wang/avatar.jpg" alt="王贤俊">
+                    </div>
+                    <div class="team-info">
+                        <h3>王贤俊</h3>
+                        <p class="team-role">2024级硕士</p>
+                        <p class="team-email">479960826@qq.com</p>
+                    </div>
+                    <div class="team-hover-info">
+                        <h4>王贤俊</h4>
+                        <div class="hover-email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            479960826@qq.com
+                        </div>
+                        <div class="hover-bio">雷达反演组的二年级研究生，主要从事雷暴大风相关研究。</div>
+                    </div>
+                </div>
+
+                <div class="team-card" data-name="刘怀豪"
+                    data-bio="中国海洋大学计算机技术专业的硕士研究生，师从张伟教授。本科毕业于中国石油大学（华东）智能科学与技术专业。研究聚焦于气象人工智能领域，致力于通过深度学习和计算机视觉技术推进天气数据分析和预报。"
+                    data-email="1072116624@qq.com" data-role="2024级硕士">
+                    <div class="team-avatar">
+                        <img src="authors/Huaihao Liu/avatar.jpg" alt="刘怀豪">
+                    </div>
+                    <div class="team-info">
+                        <h3>刘怀豪</h3>
+                        <p class="team-role">2024级硕士</p>
+                        <p class="team-email">1072116624@qq.com</p>
+                    </div>
+                    <div class="team-hover-info">
+                        <h4>刘怀豪</h4>
+                        <div class="hover-email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            1072116624@qq.com
+                        </div>
+                        <div class="hover-bio">
+                            中国海洋大学计算机技术专业的硕士研究生，师从张伟教授。本科毕业于中国石油大学（华东）智能科学与技术专业。研究聚焦于气象人工智能领域，致力于通过深度学习和计算机视觉技术推进天气数据分析和预报。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card" data-name="陈康宁" data-bio="计算机技术专业的二年级研究生，研究聚焦于强对流临近预报。"
+                    data-email="chenkangning@stu.ouc.edu.cn" data-role="2024级硕士">
+                    <div class="team-avatar">
+                        <img src="authors/Kangning Chen/avatar.jpg" alt="陈康宁">
+                    </div>
+                    <div class="team-info">
+                        <h3>陈康宁</h3>
+                        <p class="team-role">2024级硕士</p>
+                        <p class="team-email">chenkangning@stu.ouc.edu.cn</p>
+                    </div>
+                    <div class="team-hover-info">
+                        <h4>陈康宁</h4>
+                        <div class="hover-email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            chenkangning@stu.ouc.edu.cn
+                        </div>
+                        <div class="hover-bio">计算机技术专业的二年级研究生，研究聚焦于强对流临近预报。</div>
+                    </div>
+                </div>
+
+                <div class="team-card" data-name="杜腾腾" data-bio="研二学生，在海洋组进行海洋预测研究。"
+                    data-email="dutengteng@stu.ouc.edu.cn" data-role="2024级硕士">
+                    <div class="team-avatar">
+                        <img src="authors/Tengteng Du/avatar.jpg" alt="杜腾腾">
+                    </div>
+                    <div class="team-info">
+                        <h3>杜腾腾</h3>
+                        <p class="team-role">2024级硕士</p>
+                        <p class="team-email">dutengteng@stu.ouc.edu.cn</p>
+                    </div>
+                    <div class="team-hover-info">
+                        <h4>杜腾腾</h4>
+                        <div class="hover-email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            dutengteng@stu.ouc.edu.cn
+                        </div>
+                        <div class="hover-bio">研二学生，在海洋组进行海洋预测研究。</div>
+                    </div>
+                </div>
+
+                <!-- 2025级研究生 -->
+                <div class="team-card" data-name="纪紫明"
+                    data-bio="中国海洋大学的硕士研究生，师从张巍教授。毕业于南京信息工程大学计算机科学与技术专业。研究聚焦于强对流临近预报。" data-email="2322762993@qq.com"
+                    data-role="2025级硕士">
+                    <div class="team-avatar">
+                        <img src="authors/Ziming Ji/avatar.jpg" alt="纪紫明">
+                    </div>
+                    <div class="team-info">
+                        <h3>纪紫明</h3>
+                        <p class="team-role">2025级硕士</p>
+                        <p class="team-email">2322762993@qq.com</p>
+                    </div>
+                    <div class="team-hover-info">
+                        <h4>纪紫明</h4>
+                        <div class="hover-email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            2322762993@qq.com
+                        </div>
+                        <div class="hover-bio">中国海洋大学的硕士研究生，师从张巍教授。毕业于南京信息工程大学计算机科学与技术专业。研究聚焦于强对流临近预报。</div>
+                    </div>
+                </div>
+
+                <div class="team-card" data-name="李丽媛"
+                    data-bio="中国海洋大学的硕士研究生，师从张巍教授。本科毕业于山东建筑大学计算机科学与技术专业。研究聚焦于强对流临近预报。"
+                    data-email="lly4175@stu.ouc.edu.cn" data-role="2025级硕士">
+                    <div class="team-avatar">
+                        <img src="authors/Liyuan Li/avatar.jpg" alt="李丽媛">
+                    </div>
+                    <div class="team-info">
+                        <h3>李丽媛</h3>
+                        <p class="team-role">2025级硕士</p>
+                        <p class="team-email">lly4175@stu.ouc.edu.cn</p>
+                    </div>
+                    <div class="team-hover-info">
+                        <h4>李丽媛</h4>
+                        <div class="hover-email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            lly4175@stu.ouc.edu.cn
+                        </div>
+                        <div class="hover-bio">中国海洋大学的硕士研究生，师从张巍教授。本科毕业于山东建筑大学计算机科学与技术专业。研究聚焦于强对流临近预报。</div>
+                    </div>
+                </div>
+
+                <div class="team-card" data-name="王奕月" data-bio="合成天气雷达组的一年级研究生。" data-email="lly4175@stu.ouc.edu.cn"
+                    data-role="2025级硕士">
+                    <div class="team-avatar">
+                        <img src="authors/Yiyue Wang/avatar.jpg" alt="王奕月">
+                    </div>
+                    <div class="team-info">
+                        <h3>王奕月</h3>
+                        <p class="team-role">2025级硕士</p>
+                        <p class="team-email">lly4175@stu.ouc.edu.cn</p>
+                    </div>
+                    <div class="team-hover-info">
+                        <h4>王奕月</h4>
+                        <div class="hover-email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            lly4175@stu.ouc.edu.cn
+                        </div>
+                        <div class="hover-bio">合成天气雷达组的一年级研究生。</div>
+                    </div>
+                </div>
+
+                <div class="team-card" data-name="张少游"
+                    data-bio="中国海洋大学，师从张巍教授，隶属海洋人工智能课题组。研究方向为风场预报实时偏差修正，秉持着好奇心与持续学习的精神。"
+                    data-email="zhangshaoyou@stu.ouc.edu.cn" data-role="2025级硕士">
+                    <div class="team-avatar">
+                        <img src="authors/Shaoyou Zhang/avatar.jpg" alt="张少游">
+                    </div>
+                    <div class="team-info">
+                        <h3>张少游</h3>
+                        <p class="team-role">2025级硕士</p>
+                        <p class="team-email">zhangshaoyou@stu.ouc.edu.cn</p>
+                    </div>
+                    <div class="team-hover-info">
+                        <h4>张少游</h4>
+                        <div class="hover-email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            zhangshaoyou@stu.ouc.edu.cn
+                        </div>
+                        <div class="hover-bio">中国海洋大学，师从张巍教授，隶属海洋人工智能课题组。研究方向为风场预报实时偏差修正，秉持着好奇心与持续学习的精神。</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header" style="margin-top: 80px;">
+                <h2>毕业生</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="graduates-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>年级</th>
+                            <th>姓名</th>
+                            <th>在校成果</th>
+                            <th>首次就业</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2021</td>
+                            <td>罗沐奇</td>
+                            <td>-</td>
+                            <td>山东省移动创新研究院</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>吴亚鹏</td>
+                            <td>RS</td>
+                            <td>北京百度网讯科技有限公司</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>杨晓</td>
+                            <td>-</td>
+                            <td>山东电工电气集团数字科技有限公司</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>文友奇</td>
+                            <td>-</td>
+                            <td>中联重科有限公司</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>郜述鑫</td>
+                            <td>-</td>
+                            <td>山东省农村信用联合社</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>范昆昆</td>
+                            <td>RS</td>
+                            <td>山东省农村信用联合社</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>张新宇</td>
+                            <td>ISPRS、JSTARS</td>
+                            <td>青岛市农业农村局</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>王艺豪</td>
+                            <td>-</td>
+                            <td>广东省河源市大数据局</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>刘杰</td>
+                            <td>-</td>
+                            <td>广东省惠州城市职业学院</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 发表论文 -->
+    <section id="papers" class="papers">
+        <div class="container">
+            <div class="section-header">
+                <h2>发表论文</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="papers-list">
+                <div class="paper-item">
+                    <span class="journal">Remote Sensing</span>
+                    <h3>Robust Synthesis Weather Radar from Satellite Imagery: A Light/Dark Classification and Dual-Path
+                        Processing Approach</h3>
+                    <p class="authors">Wei Zhang, Hongbo Ma, Yanhai Gan, Junyu Dong, Renbo Pang, Xiaojiang Song, Cong
+                    </p>
+                    <a href="https://www.mdpi.com/2072-4292/17/21/3609" target="_blank" class="paper-link">查看论文 →</a>
+                </div>
+                <div class="paper-item">
+                    <span class="journal">KBS</span>
+                    <h3>CIDM: A comprehensive inpainting diffusion model for missing weather radar data with knowledge
+                        guidance</h3>
+                    <p class="authors">Wei Zhang, Xinyu Zhang, Junyu Dong, Xiaojiang Song, Renbo Pang</p>
+                    <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271625000450" target="_blank"
+                        class="paper-link">查看论文 →</a>
+                </div>
+                <div class="paper-item">
+                    <span class="journal">Remote Sensing</span>
+                    <h3>A Multi-Scale Fusion Deep Learning Approach for Wind Field Retrieval Based on Geostationary
+                        Satellite Imagery</h3>
+                    <p class="authors">Wei Zhang, Yapeng Wu, Kunkun Fan, Xiaojiang Song, Renbo Pang, Boyu Guoan</p>
+                    <a href="https://www.mdpi.com/2072-4292/17/4/610" target="_blank" class="paper-link">查看论文 →</a>
+                </div>
+                <div class="paper-item">
+                    <span class="journal">IEEE</span>
+                    <h3>Inpainting Radar Missing Data via Denoising Iterative Restoration</h3>
+                    <p class="authors">Wei Zhang, Xinyu Zhang, Zhuyu Jin, Youqi Wen, Jie Liu</p>
+                    <a href="https://ieeexplore.ieee.org/document/10530050/" target="_blank" class="paper-link">查看论文
+                        →</a>
+                </div>
+                <div class="paper-item">
+                    <span class="journal">Ocean Engineering</span>
+                    <h3>A deep-learning real-time bias correction method for significant wave height forecasts in the
+                        Western North Pacific</h3>
+                    <p class="authors">Wei Zhang, Yu Sun, Yapeng Wu, Junyu Dong, Xiaojiang Song, Zhiyi Gao, Renbo Pang
+                    </p>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S1463500323001294?via%3Dihub"
+                        target="_blank" class="paper-link">查看论文 →</a>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="#" class="btn btn-outline">查看更多论文</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 近期动态 -->
+    <section id="news" class="news">
+        <div class="container">
+            <div class="section-header">
+                <h2>近期动态</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="news-list">
+                <div class="news-item">
+                    <div class="news-date">2025/04/09</div>
+                    <div class="news-content">
+                        <h3>我校信息科学与工程学部在智慧海洋领域取得突破性进展，相关成果获海大英文版专题报道！</h3>
+                        <a href="http://eweb.ouc.edu.cn/2025/0409/c900a497875/page.htm" target="_blank">查看详情 →</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">2025/04/04</div>
+                    <div class="news-content">
+                        <h3>人工智能研究院关于"海洋智能决策系统"的研究成果获权威报道！</h3>
+                        <a href="https://www.ai-ouc.cn/news/20250404.html" target="_blank">查看详情 →</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">2025/04/02</div>
+                    <div class="news-content">
+                        <h3>学院学部在海洋智能技术领域的创新成果获学校官方新闻专题报道！</h3>
+                        <a href="https://news.ouc.edu.cn/2025/0402/c91a118953/page.htm" target="_blank">查看详情 →</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">2025/03/20</div>
+                    <div class="news-content">
+                        <h3>团队参与的"琅琊泊"海洋生态监测项目获搜狐新闻专题报道！</h3>
+                        <a href="https://roll.sohu.com/a/694117100_726570" target="_blank">查看详情 →</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">2025/02/15</div>
+                    <div class="news-content">
+                        <h3>团队"数智深蓝"海洋数据平台技术创新获行业媒体聚焦！</h3>
+                        <a href="https://mp.weixin.qq.com/s/sPUAH8feo1TpGqUYfzMOrw" target="_blank">查看详情 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>联系我们</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>邮箱</h4>
+                            <p>weizhang@ouc.edu.cn</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>地址</h4>
+                            <p>中国海洋大学信息科学与工程学部</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-links">
+                    <h4>友情链接</h4>
+                    <div class="link-group">
+                        <a href="https://www.ai-ouc.cn/" target="_blank">中国海洋大学人工智能研究院</a>
+                        <a href="https://it.ouc.edu.cn/" target="_blank">中国海洋大学信息科学与工程学部</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ihcil@OUC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
