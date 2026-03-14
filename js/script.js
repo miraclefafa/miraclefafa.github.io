@@ -97,10 +97,9 @@ animatedElements.forEach(el => {
 });
 
 // 添加页面加载动画
-window.addEventListener('load', () => {
-    document.body.style.opacity = '1';
-});
-
-// 初始化页面加载状态
 document.body.style.opacity = '0';
 document.body.style.transition = 'opacity 0.5s ease';
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.body.style.opacity = '1';
+});
