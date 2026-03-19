@@ -319,11 +319,132 @@ body {
     background: var(--bg-white);
 }
 
-/* 导师介绍卡片 */
+/* 导师介绍区域 */
 .advisor-section {
     margin-bottom: 40px;
 }
 
+/* 三列导师卡片网格 */
+.advisors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.advisor-card-compact {
+    background: linear-gradient(160deg, #ffffff 0%, #f0f7ff 100%);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: all 0.35s ease;
+    display: flex;
+    flex-direction: column;
+    border-top: 4px solid var(--primary-color);
+}
+
+.advisor-card-compact:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 48px rgba(0, 102, 204, 0.18);
+}
+
+.advisor-card-avatar {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background: #e8f0fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advisor-card-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.4s ease;
+}
+
+.advisor-card-compact:hover .advisor-card-avatar img {
+    transform: scale(1.05);
+}
+
+.advisor-card-body {
+    padding: 24px 22px 22px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.advisor-card-body h3 {
+    font-size: 1.6rem;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.advisor-card-title {
+    font-size: 0.92rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 12px;
+    letter-spacing: 0.02em;
+}
+
+.advisor-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 3px 10px;
+    background: rgba(0, 102, 204, 0.1);
+    color: var(--primary-color);
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    border: 1px solid rgba(0, 102, 204, 0.2);
+}
+
+.advisor-card-bio {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.75;
+    flex: 1;
+    margin-bottom: 18px;
+}
+
+.advisor-card-links {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+.advisor-card-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 7px 16px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: var(--text-white);
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.2);
+}
+
+.advisor-card-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px rgba(0, 102, 204, 0.35);
+}
+
+/* 兼容旧版 advisor-card（保留以防引用） */
 .advisor-card {
     display: flex;
     gap: 40px;
@@ -333,11 +454,6 @@ body {
     box-shadow: var(--shadow-lg);
     transition: all 0.3s ease;
     align-items: center;
-}
-
-.advisor-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 40px rgba(0, 102, 204, 0.15);
 }
 
 .advisor-avatar {
@@ -354,10 +470,6 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.advisor-info {
-    flex: 1;
 }
 
 .advisor-info h3 {
@@ -823,6 +935,22 @@ body {
         gap: 40px;
     }
 
+    .advisors-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .advisor-card-compact {
+        flex-direction: row;
+    }
+
+    .advisor-card-avatar {
+        width: 180px;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    /* 旧版单卡兼容 */
     .advisor-card {
         flex-direction: column;
         text-align: center;
@@ -877,6 +1005,15 @@ body {
     .news-date {
         min-width: auto;
         width: fit-content;
+    }
+
+    .advisor-card-compact {
+        flex-direction: column;
+    }
+
+    .advisor-card-avatar {
+        width: 100%;
+        height: 220px;
     }
 
     .hero h1 {
@@ -938,6 +1075,10 @@ body {
 
     .advisor-links a {
         justify-content: center;
+    }
+
+    .advisor-card-links {
+        flex-direction: row;
     }
 
     .team-grid {
