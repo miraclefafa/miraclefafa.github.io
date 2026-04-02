@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIMM@OUC - 实验室</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,7 +18,13 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="nav-brand">
-                <span class="logo">AIMM@OUC</span>
+                <div class="nav-logo-wrap">
+                    <img src="AIMM6.jpg" alt="AIMM@OUC Logo" class="nav-logo-img">
+                </div>
+                <div class="logo">
+                    <span class="logo-main">AIMM@OUC</span>
+                    <span class="logo-sub">Ocean University of China</span>
+                </div>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="active">首页</a></li>
@@ -37,12 +48,23 @@
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
-                <h1>AIMM@OUC</h1>
-                <p>本实验室立足于物理海洋学、气象学与海洋工程学的交叉前沿，以海洋与大气交互界面为核心研究对象。我们致力于揭示这一关键边界层中能量与物质交换的核心动力过程，深化对海气通量、海浪生成与演化等关键海洋气象要素的生成机理与演变规律的理解，并发展其精准预报理论与方法。
-                </p>
-                <div class="hero-buttons">
-                    <a href="#research" class="btn btn-primary">了解我们的研究</a>
-                    <a href="#team" class="btn btn-secondary">认识团队</a>
+                <!-- 左侧：大 Logo -->
+                <div class="hero-logo-col">
+                    <div class="hero-logo-wrap">
+                        <img src="AIMM6.jpg" alt="AIMM@OUC Logo" class="hero-logo-img">
+                    </div>
+                </div>
+                <!-- 右侧：文字内容 -->
+                <div class="hero-text-col">
+                    <h1>AIMM@OUC</h1>
+                    <p class="hero-subtitle">Artificial Intelligence for Marine & Meteorology @ Ocean University of
+                        China</p>
+                    <p>本实验室聚焦人工智能与海洋大气的前沿交叉领域，致力于将深度学习、大语言模型等人工智能技术与传统海洋气象学深度融合。我们围绕海洋智能预报、雷达强对流预警、极端天气小样本学习等核心方向开展研究，旨在构建从机理认知到智能预报的完整研究闭环，为海洋安全保障和气候变化应对提供科学支撑。
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#research" class="btn btn-primary">了解我们的研究</a>
+                        <a href="#team" class="btn btn-secondary">认识团队</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,8 +79,10 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>实验室的终极科学愿景是构建一个从机理认知到智能预报的完整研究闭环，为应对极端天气气候事件、保障海洋安全及深化地球系统科学研究提供坚实的科学支撑与技术解决方案。</p>
-                    <p>我们聚焦于海洋与大气交互界面的核心动力过程，核心目标是深化对关键海洋气象要素的生成机理、演变规律及精准预报研究。这一领域是物理海洋学、气象学与海洋工程学高度交叉的前沿阵地。</p>
+                    <p>AIMM@OUC（人工智能海洋与气象实验室）隶属于中国海洋大学，聚焦海洋与大气科学的前沿交叉领域。实验室致力于将深度学习、大语言模型等人工智能技术与传统海洋气象学深度融合，打造从机理认知到智能预报的完整研究闭环。
+                    </p>
+                    <p>我们围绕海洋智能预报、雷达强对流临近预警、极端天气小样本学习等核心方向开展创新研究，旨在应对极端天气气候事件、保障海洋安全、深化地球系统科学研究，为国家海洋强国战略提供坚实的科学支撑与技术解决方案。
+                    </p>
                 </div>
                 <div class="about-image">
                     <img src="https://images.unsplash.com/photo-1454789476662-53eb23ba5907?w=600" alt="海洋研究">
@@ -122,81 +146,93 @@
 
             <!-- 导师介绍 -->
             <div class="advisor-section">
-                <div class="advisors-grid">
+                <div class="advisors-list">
 
-                    <!-- 张巍 -->
-                    <div class="advisor-card-compact">
-                        <div class="advisor-card-avatar">
-                            <img src="authors/Wei Zhang/avatar.jpg" alt="张巍教授">
-                        </div>
-                        <div class="advisor-card-body">
+                    <div class="advisor-horizontal-card">
+                        <div class="advisor-info-main">
                             <h3>张巍</h3>
-                            <p class="advisor-card-title">教授 / 博士生导师</p>
-                            <p class="advisor-card-tags">
+                            <p class="advisor-title">教授 / 硕士生导师</p>
+                            <div class="advisor-tags">
                                 <span class="tag">海洋大气相互作用</span>
                                 <span class="tag">人工智能气象预报</span>
-                            </p>
-                            <p class="advisor-card-bio">中国海洋大学信息科学与工程学部教授，博士生导师。主要从事海洋大气相互作用、人工智能气象预报等交叉领域研究，在 Remote Sensing、IEEE 等国际顶级期刊发表多篇高水平论文，主持多项国家级科研项目。</p>
-                            <div class="advisor-card-links">
-                                <a href="https://scholar.google.com/citations?user=8RXF4Q4AAAAJ&hl=en" target="_blank" title="Google Scholar">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5 12 0z"/></svg>
-                                    Scholar
-                                </a>
-                                <a href="https://weizhang.github.io/index.html" target="_blank" title="个人主页">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                                    主页
-                                </a>
-                                <a href="mailto:weizhang@ouc.edu.cn" title="Email">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                                    邮箱
-                                </a>
                             </div>
+                        </div>
+                        <div class="advisor-info-bio">
+                            <p>中国海洋大学信息科学与工程学部教授。主要从事人工智能气象预报等交叉领域研究，在 Remote Sensing、IEEE 等国际顶级期刊发表多篇高水平论文，主持多项国家级科研项目。
+                            </p>
+                        </div>
+                        <div class="advisor-info-links">
+                            <a href="https://scholar.google.com/citations?hl=en&user=3M2SK4YAAAAJ"
+                                target="_blank">Scholar</a>
+                            <a href="mailto:weizhang@ouc.edu.cn">邮箱</a>
                         </div>
                     </div>
 
-                    <!-- 董军宇 -->
-                    <div class="advisor-card-compact">
-                        <div class="advisor-card-avatar">
-                            <img src="djy.jpg" alt="董军宇教授">
-                        </div>
-                        <div class="advisor-card-body">
+                    <div class="advisor-horizontal-card">
+                        <div class="advisor-info-main">
                             <h3>董军宇</h3>
-                            <p class="advisor-card-title">教授 / 博士生导师 · 学部部长</p>
-                            <p class="advisor-card-tags">
+                            <p class="advisor-title">教授 / 博士生导师 · 学部部长</p>
+                            <div class="advisor-tags">
                                 <span class="tag">海洋大数据挖掘</span>
                                 <span class="tag">水下视觉处理</span>
-                                <span class="tag">国家高层次人才</span>
-                            </p>
-                            <p class="advisor-card-bio">入选教育部新世纪人才、国家高层次人才计划科技创新领军人才，现任信息科学与工程学部部长。国际上最早采用深度学习预测海表温度的学者之一，主持研发国内外分辨率最高的座底式海底高分辨率获取设备及国内首个大型坐底式水下激光扫描三维成像仪。近五年主持5个国家级项目，SCI发表论文100余篇，获山东省自然科学二等奖（排名首位）。</p>
-                            <div class="advisor-card-links">
-                                <a href="https://it.ouc.edu.cn/djy/" target="_blank" title="个人主页">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                                    主页
-                                </a>
                             </div>
+                        </div>
+                        <div class="advisor-info-bio">
+                            <p>国家高层次人才，现任信息科学与工程学部部长。国际上最早采用深度学习预测海表温度的学者之一，主持研发国内首个大型坐底式水下激光扫描三维成像仪，获山东省自然科学二等奖。</p>
+                        </div>
+                        <div class="advisor-info-links">
+                            <a href="https://it.ouc.edu.cn/djy/" target="_blank">主页</a>
                         </div>
                     </div>
 
-                    <!-- 甘言海 -->
-                    <div class="advisor-card-compact">
-                        <div class="advisor-card-avatar">
-                            <img src="gyh.jpg" alt="甘言海老师">
-                        </div>
-                        <div class="advisor-card-body">
+                    <div class="advisor-horizontal-card">
+                        <div class="advisor-info-main">
                             <h3>甘言海</h3>
-                            <p class="advisor-card-title">副教授 / 硕士生导师</p>
-                            <p class="advisor-card-tags">
+                            <p class="advisor-title">讲师 / 硕士生导师</p>
+                            <div class="advisor-tags">
                                 <span class="tag">智能内容生成</span>
-                                <span class="tag">海洋模拟预报</span>
                                 <span class="tag">数据同化</span>
-                            </p>
-                            <p class="advisor-card-bio">主要研究人工智能与海洋科学交叉领域，涵盖智能内容生成、数据同化、机器学习、海洋模拟等方向。在 IEEE TIP、TCYB、TCSVT 等期刊发表论文 20 余篇。主持国家自然科学基金青年科学基金项目，入选国家资助博士后研究人员计划，获山东省优秀博士学位论文奖。</p>
-                            <div class="advisor-card-links">
-                                <a href="https://it.ouc.edu.cn/gyh/" target="_blank" title="个人主页">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                                    主页
-                                </a>
                             </div>
+                        </div>
+                        <div class="advisor-info-bio">
+                            <p>主要研究人工智能与海洋科学交叉领域，涵盖智能内容生成、海洋模拟等方向。在 IEEE TIP、TCYB 等期刊发表论文 20 余篇，获山东省优秀博士学位论文奖。</p>
+                        </div>
+                        <div class="advisor-info-links">
+                            <a href="https://it.ouc.edu.cn/gyh/" target="_blank">主页</a>
+                        </div>
+                    </div>
+
+                    <div class="advisor-horizontal-card">
+                        <div class="advisor-info-main">
+                            <h3>李四</h3>
+                            <p class="advisor-title">副教授 / 硕士生导师</p>
+                            <div class="advisor-tags">
+                                <span class="tag">海洋声学信号处理</span>
+                                <span class="tag">深度学习去噪</span>
+                            </div>
+                        </div>
+                        <div class="advisor-info-bio">
+                            <p>致力于海洋声学环境下的信号增强与目标识别研究。通过深度学习算法解决复杂噪声环境下的水下通信难题，相关成果已在多个海洋监测平台获得应用。</p>
+                        </div>
+                        <div class="advisor-info-links">
+                            <a href="#">主页</a>
+                        </div>
+                    </div>
+
+                    <div class="advisor-horizontal-card">
+                        <div class="advisor-info-main">
+                            <h3>王五</h3>
+                            <p class="advisor-title">讲师 / 博士</p>
+                            <div class="advisor-tags">
+                                <span class="tag">极地气象建模</span>
+                                <span class="tag">海冰数值预报</span>
+                            </div>
+                        </div>
+                        <div class="advisor-info-bio">
+                            <p>研究方向为极地大气动力学与海冰数值预报优化。专注于构建融合物理机理的AI混合模型，以提升全球变暖背景下极地极端天气的预报精度。</p>
+                        </div>
+                        <div class="advisor-info-links">
+                            <a href="#">主页</a>
                         </div>
                     </div>
 
@@ -259,8 +295,7 @@
                     </div>
                 </div>
 
-                <div class="team-card" data-name="徐志林" data-bio="中国海洋大学计算机技术专业的硕士研究生，研究重点是人工智能海洋学。"
-                    data-role="2023级硕士">
+                <div class="team-card" data-name="徐志林" data-bio="中国海洋大学计算机技术专业的硕士研究生，研究重点是人工智能海洋学。" data-role="2023级硕士">
                     <div class="team-avatar">
                         <img src="authors/Zhilin Xu/avatar.jpg" alt="徐志林">
                     </div>
@@ -275,8 +310,7 @@
                 </div>
 
                 <div class="team-card" data-name="张嘉兴"
-                    data-bio="热爱音乐，中国海洋大学软件工程专业的硕士研究生，研究重点是卫星反演研究，已在ICGIP会议上发表论文。目前从事GPU驱动相关的工作。"
-                    data-role="2023级硕士">
+                    data-bio="热爱音乐，中国海洋大学软件工程专业的硕士研究生，研究重点是卫星反演研究，已在ICGIP会议上发表论文。目前从事GPU驱动相关的工作。" data-role="2023级硕士">
                     <div class="team-avatar">
                         <img src="authors/Jiaxing Zhang/avatar.jpg" alt="张嘉兴">
                     </div>
@@ -305,8 +339,7 @@
                     </div>
                 </div>
 
-                <div class="team-card" data-name="刘晓冉" data-bio="强对流临近预报方向，码本第一代继承人。"
-                    data-role="2023级硕士">
+                <div class="team-card" data-name="刘晓冉" data-bio="强对流临近预报方向，码本第一代继承人。" data-role="2023级硕士">
                     <div class="team-avatar">
                         <img src="authors/Xiaoran Liu/avatar.jpg" alt="刘晓冉">
                     </div>
@@ -322,8 +355,7 @@
 
                 <!-- 2024级研究生 -->
                 <div class="team-card" data-name="郭梦珂"
-                    data-bio="中国海洋大学张伟教授指导下的硕士研究生，本科毕业于郑州大学计算机科学与技术专业。研究领域是海上强对流天气预报。"
-                    data-role="2024级硕士">
+                    data-bio="中国海洋大学张伟教授指导下的硕士研究生，本科毕业于郑州大学计算机科学与技术专业。研究领域是海上强对流天气预报。" data-role="2024级硕士">
                     <div class="team-avatar">
                         <img src="authors/Mengke Guo/avatar.jpg" alt="郭梦珂">
                     </div>
@@ -337,8 +369,7 @@
                     </div>
                 </div>
 
-                <div class="team-card" data-name="王贤俊" data-bio="雷达反演组的二年级研究生，主要从事雷暴大风相关研究。"
-                    data-role="2024级硕士">
+                <div class="team-card" data-name="王贤俊" data-bio="雷达反演组的二年级研究生，主要从事雷暴大风相关研究。" data-role="2024级硕士">
                     <div class="team-avatar">
                         <img src="authors/Xianjun Wang/avatar.jpg" alt="王贤俊">
                     </div>
@@ -370,8 +401,7 @@
                     </div>
                 </div>
 
-                <div class="team-card" data-name="陈康宁" data-bio="计算机技术专业的二年级研究生，研究聚焦于强对流临近预报。"
-                    data-role="2024级硕士">
+                <div class="team-card" data-name="陈康宁" data-bio="计算机技术专业的二年级研究生，研究聚焦于强对流临近预报。" data-role="2024级硕士">
                     <div class="team-avatar">
                         <img src="authors/Kangning Chen/avatar.jpg" alt="陈康宁">
                     </div>
@@ -385,8 +415,7 @@
                     </div>
                 </div>
 
-                <div class="team-card" data-name="杜腾腾" data-bio="研二学生，在海洋组进行海洋预测研究。"
-                    data-role="2024级硕士">
+                <div class="team-card" data-name="杜腾腾" data-bio="研二学生，在海洋组进行海洋预测研究。" data-role="2024级硕士">
                     <div class="team-avatar">
                         <img src="authors/Tengteng Du/avatar.jpg" alt="杜腾腾">
                     </div>
@@ -402,8 +431,7 @@
 
                 <!-- 2025级研究生 -->
                 <div class="team-card" data-name="纪紫明"
-                    data-bio="中国海洋大学的硕士研究生，师从张巍教授。毕业于南京信息工程大学计算机科学与技术专业。研究聚焦于强对流临近预报。"
-                    data-role="2025级硕士">
+                    data-bio="中国海洋大学的硕士研究生，师从张巍教授。毕业于南京信息工程大学计算机科学与技术专业。研究聚焦于强对流临近预报。" data-role="2025级硕士">
                     <div class="team-avatar">
                         <img src="authors/Ziming Ji/avatar.jpg" alt="纪紫明">
                     </div>
@@ -418,8 +446,7 @@
                 </div>
 
                 <div class="team-card" data-name="李丽媛"
-                    data-bio="中国海洋大学的硕士研究生，师从张巍教授。本科毕业于山东建筑大学计算机科学与技术专业。研究聚焦于强对流临近预报。"
-                    data-role="2025级硕士">
+                    data-bio="中国海洋大学的硕士研究生，师从张巍教授。本科毕业于山东建筑大学计算机科学与技术专业。研究聚焦于强对流临近预报。" data-role="2025级硕士">
                     <div class="team-avatar">
                         <img src="authors/Liyuan Li/avatar.jpg" alt="李丽媛">
                     </div>
@@ -433,8 +460,7 @@
                     </div>
                 </div>
 
-                <div class="team-card" data-name="王奕月" data-bio="合成天气雷达组的一年级研究生。"
-                    data-role="2025级硕士">
+                <div class="team-card" data-name="王奕月" data-bio="合成天气雷达组的一年级研究生。" data-role="2025级硕士">
                     <div class="team-avatar">
                         <img src="authors/Yiyue Wang/avatar.jpg" alt="王奕月">
                     </div>
@@ -449,8 +475,7 @@
                 </div>
 
                 <div class="team-card" data-name="张少游"
-                    data-bio="中国海洋大学，师从张巍教授，隶属海洋人工智能课题组。研究方向为风场预报实时偏差修正，秉持着好奇心与持续学习的精神。"
-                    data-role="2025级硕士">
+                    data-bio="中国海洋大学，师从张巍教授，隶属海洋人工智能课题组。研究方向为风场预报实时偏差修正，秉持着好奇心与持续学习的精神。" data-role="2025级硕士">
                     <div class="team-avatar">
                         <img src="authors/Shaoyou Zhang/avatar.jpg" alt="张少游">
                     </div>
@@ -550,46 +575,58 @@
             <div class="papers-list">
                 <div class="paper-item">
                     <span class="journal">Remote Sensing</span>
+                    <span class="paper-tag">SCI</span>
                     <h3>Robust Synthesis Weather Radar from Satellite Imagery: A Light/Dark Classification and Dual-Path
                         Processing Approach</h3>
                     <p class="authors">Wei Zhang, Hongbo Ma, Yanhai Gan, Junyu Dong, Renbo Pang, Xiaojiang Song, Cong
-                    </p>
+                        Yang</p>
+                    <p class="paper-meta">Remote Sensing, vol. 17, no. 21, p. 3609, 2025</p>
                     <a href="https://www.mdpi.com/2072-4292/17/21/3609" target="_blank" class="paper-link">查看论文 →</a>
                 </div>
                 <div class="paper-item">
-                    <span class="journal">IRSPRS</span>
-                    <h3>CIDM: A comprehensive inpainting diffusion model for missing weather radar data with knowledge
-                        guidance</h3>
+                    <span class="journal">ISPRS Journal of Photogrammetry and Remote Sensing</span>
+                    <span class="paper-tag">SCI</span>
+                    <h3>CIDM: A Comprehensive Inpainting Diffusion Model for Missing Weather Radar Data with Knowledge
+                        Guidance</h3>
                     <p class="authors">Wei Zhang, Xinyu Zhang, Junyu Dong, Xiaojiang Song, Renbo Pang</p>
+                    <p class="paper-meta">ISPRS J. Photogramm. Remote Sens., vol. 231, 2025</p>
                     <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271625000450" target="_blank"
                         class="paper-link">查看论文 →</a>
                 </div>
                 <div class="paper-item">
                     <span class="journal">Remote Sensing</span>
+                    <span class="paper-tag">SCI</span>
                     <h3>A Multi-Scale Fusion Deep Learning Approach for Wind Field Retrieval Based on Geostationary
                         Satellite Imagery</h3>
                     <p class="authors">Wei Zhang, Yapeng Wu, Kunkun Fan, Xiaojiang Song, Renbo Pang, Boyu Guoan</p>
+                    <p class="paper-meta">Remote Sensing, vol. 17, no. 4, p. 610, 2025</p>
                     <a href="https://www.mdpi.com/2072-4292/17/4/610" target="_blank" class="paper-link">查看论文 →</a>
                 </div>
                 <div class="paper-item">
-                    <span class="journal">IEEE</span>
+                    <span class="journal">IEEE J-STARS</span>
+                    <span class="paper-tag">SCI</span>
                     <h3>Inpainting Radar Missing Data via Denoising Iterative Restoration</h3>
                     <p class="authors">Wei Zhang, Xinyu Zhang, Zhuyu Jin, Youqi Wen, Jie Liu</p>
+                    <p class="paper-meta">IEEE J. Sel. Top. Appl. Earth Obs. Remote Sens., vol. 17, pp. 5302-5314, 2024
+                    </p>
                     <a href="https://ieeexplore.ieee.org/document/10530050/" target="_blank" class="paper-link">查看论文
                         →</a>
                 </div>
                 <div class="paper-item">
                     <span class="journal">Ocean Engineering</span>
-                    <h3>A deep-learning real-time bias correction method for significant wave height forecasts in the
+                    <span class="paper-tag">SCI</span>
+                    <h3>A Deep-Learning Real-Time Bias Correction Method for Significant Wave Height Forecasts in the
                         Western North Pacific</h3>
                     <p class="authors">Wei Zhang, Yu Sun, Yapeng Wu, Junyu Dong, Xiaojiang Song, Zhiyi Gao, Renbo Pang
                     </p>
+                    <p class="paper-meta">Ocean Eng., vol. 283, 2023</p>
                     <a href="https://www.sciencedirect.com/science/article/pii/S1463500323001294?via%3Dihub"
                         target="_blank" class="paper-link">查看论文 →</a>
                 </div>
             </div>
             <div class="text-center" style="margin-top: 40px;">
-                <a href="#" class="btn btn-outline">查看更多论文</a>
+                <a href="https://scholar.google.com/citations?hl=en&user=3M2SK4YAAAAJ" target="_blank"
+                    class="btn btn-outline">查看更多论文</a>
             </div>
         </div>
     </section>
@@ -612,7 +649,8 @@
                 <div class="news-item">
                     <div class="news-date">海大英文版</div>
                     <div class="news-content">
-                        <h3>Significant Progress Made by OUC in AI for Meteorological and Marine Environmental Forecasting</h3>
+                        <h3>Significant Progress Made by OUC in AI for Meteorological and Marine Environmental
+                            Forecasting</h3>
                         <a href="http://eweb.ouc.edu.cn/2025/0409/c900a497875/page.htm" target="_blank">查看详情 →</a>
                     </div>
                 </div>
@@ -697,7 +735,8 @@
                     <div class="news-date">山东发改委</div>
                     <div class="news-content">
                         <h3>算力使用率已达82%-探访山东首个大规模人工智能算力集群（琅琊泊大模型报道）</h3>
-                        <a href="http://fgw.shandong.gov.cn/art/2023/6/30/art_104864_10404429.html" target="_blank">查看详情 →</a>
+                        <a href="http://fgw.shandong.gov.cn/art/2023/6/30/art_104864_10404429.html" target="_blank">查看详情
+                            →</a>
                     </div>
                 </div>
                 <div class="news-item">
@@ -711,7 +750,8 @@
                     <div class="news-date">MarkTechPost</div>
                     <div class="news-content">
                         <h3>A study on various deep learning based weather forecasting models</h3>
-                        <a href="https://www.marktechpost.com/2023/07/24/a-study-on-various-deep-learning-based-weather-forecasting-models/" target="_blank">查看详情 →</a>
+                        <a href="https://www.marktechpost.com/2023/07/24/a-study-on-various-deep-learning-based-weather-forecasting-models/"
+                            target="_blank">查看详情 →</a>
                     </div>
                 </div>
             </div>
