@@ -572,57 +572,158 @@
                 <h2>发表论文</h2>
                 <div class="divider"></div>
             </div>
-            <div class="papers-list">
-                <div class="paper-item">
-                    <span class="journal">Remote Sensing</span>
-                    <span class="paper-tag">SCI</span>
-                    <h3>Robust Synthesis Weather Radar from Satellite Imagery: A Light/Dark Classification and Dual-Path
-                        Processing Approach</h3>
-                    <p class="authors">Wei Zhang, Hongbo Ma, Yanhai Gan, Junyu Dong, Renbo Pang, Xiaojiang Song, Cong
-                        Yang</p>
-                    <p class="paper-meta">Remote Sensing, vol. 17, no. 21, p. 3609, 2025</p>
-                    <a href="https://www.mdpi.com/2072-4292/17/21/3609" target="_blank" class="paper-link">查看论文 →</a>
+            <div class="papers-grid">
+
+                <!-- 论文1 -->
+                <div class="paper-card">
+                    <div class="paper-card-front">
+                        <div class="paper-card-front-body">
+                            <div class="paper-card-front-tags">
+                                <span class="journal">TGRS</span>
+                                <span class="paper-tag">SCI</span>
+                            </div>
+                            <h3>MS-EdgeCast: A Dual-stage Framework with a Multi-scale Convolutional Recurrent Network and Edge-guided Diffusion for Convective Storm Nowcasting</h3>
+                            <div class="paper-card-front-meta">
+                                <span class="authors">W Zhang, L. Wang, M. Luo, R. Pang*, X. Song, and X. Zhang</span>
+                                <span class="paper-meta">IEEE TGRS 64, 1-13, 2026</span>
+                            </div>
+                        </div>
+                        <div class="paper-card-hint">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            <span>查看详情</span>
+                        </div>
+                    </div>
+                    <div class="paper-card-hover">
+                        <div class="paper-hover-img-wrap">
+                            <img src="components/1.png" alt="论文图示" class="paper-hover-img">
+                        </div>
+                        <div class="paper-hover-body">
+                            <p class="paper-hover-abstract">本文提出一种面向强对流风暴临近预报的两阶段框架。第一阶段，多尺度卷积循环网络（MS-CRN）同时捕捉局部细节和全局大气模式；第二阶段，边缘引导扩散模型（EGD）对预测结果进行精细化，保留风暴边界并消除模糊伪影。实验表明，MS-CRN的平均CSI达0.3305，HSS达0.4358，分别超越基线3.9%和4.3%，EGD在高反射率阈值下的粗尺度CSI-pool较先前生成式方法提升13.9%。</p>
+                            <a href="https://ieeexplore.ieee.org/document/11358840/" target="_blank" class="paper-link">查看论文 →</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="paper-item">
-                    <span class="journal">ISPRS Journal of Photogrammetry and Remote Sensing</span>
-                    <span class="paper-tag">SCI</span>
-                    <h3>CIDM: A Comprehensive Inpainting Diffusion Model for Missing Weather Radar Data with Knowledge
-                        Guidance</h3>
-                    <p class="authors">Wei Zhang, Xinyu Zhang, Junyu Dong, Xiaojiang Song, Renbo Pang</p>
-                    <p class="paper-meta">ISPRS J. Photogramm. Remote Sens., vol. 231, 2025</p>
-                    <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271625000450" target="_blank"
-                        class="paper-link">查看论文 →</a>
+
+                <!-- 论文2 -->
+                <div class="paper-card">
+                    <div class="paper-card-front">
+                        <div class="paper-card-front-body">
+                            <div class="paper-card-front-tags">
+                                <span class="journal">ISPRS</span>
+                                <span class="paper-tag">SCI</span>
+                            </div>
+                            <h3>CIDM: A Comprehensive Inpainting Diffusion Model for Missing Weather Radar Data with Knowledge Guidance</h3>
+                            <div class="paper-card-front-meta">
+                                <span class="authors">Wei Zhang, Xinyu Zhang, Junyu Dong, Xiaojiang Song, Renbo Pang</span>
+                                <span class="paper-meta">ISPRS J. Photogramm. Remote Sens., vol. 231, 2025</span>
+                            </div>
+                        </div>
+                        <div class="paper-card-hint">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            <span>查看详情</span>
+                        </div>
+                    </div>
+                    <div class="paper-card-hover">
+                        <div class="paper-hover-img-wrap">
+                            <img src="components/2.png" alt="论文图示" class="paper-hover-img">
+                        </div>
+                        <div class="paper-hover-body">
+                            <p class="paper-hover-abstract">本文提出一种综合修复扩散模型（CIDM），专门解决气象雷达扫描区域数据缺失问题。该方法将领域知识融入生成式模型，以已知区域的先验信息引导缺失信息的生成，无需复杂数据预处理。在NOAA的MRMS数据集上，针对各类缺失场景（尤其是极端大面积缺失），修复精度较现有方法提升5%至35%，充分展示了生成模型在遥感精细化数据生成方面的潜力。</p>
+                            <a href="https://linkinghub.elsevier.com/retrieve/pii/S0924271625000450" target="_blank" class="paper-link">查看论文 →</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="paper-item">
-                    <span class="journal">Remote Sensing</span>
-                    <span class="paper-tag">SCI</span>
-                    <h3>A Multi-Scale Fusion Deep Learning Approach for Wind Field Retrieval Based on Geostationary
-                        Satellite Imagery</h3>
-                    <p class="authors">Wei Zhang, Yapeng Wu, Kunkun Fan, Xiaojiang Song, Renbo Pang, Boyu Guoan</p>
-                    <p class="paper-meta">Remote Sensing, vol. 17, no. 4, p. 610, 2025</p>
-                    <a href="https://www.mdpi.com/2072-4292/17/4/610" target="_blank" class="paper-link">查看论文 →</a>
+
+                <!-- 论文3 -->
+                <div class="paper-card">
+                    <div class="paper-card-front">
+                        <div class="paper-card-front-body">
+                            <div class="paper-card-front-tags">
+                                <span class="journal">Remote Sensing</span>
+                                <span class="paper-tag">SCI</span>
+                            </div>
+                            <h3>A Multi-Scale Fusion Deep Learning Approach for Wind Field Retrieval Based on Geostationary Satellite Imagery</h3>
+                            <div class="paper-card-front-meta">
+                                <span class="authors">Wei Zhang, Yapeng Wu, Kunkun Fan, Xiaojiang Song, Renbo Pang, Boyu Guoan</span>
+                                <span class="paper-meta">Remote Sensing, vol. 17, no. 4, p. 610, 2025</span>
+                            </div>
+                        </div>
+                        <div class="paper-card-hint">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            <span>查看详情</span>
+                        </div>
+                    </div>
+                    <div class="paper-card-hover">
+                        <div class="paper-hover-img-wrap">
+                            <img src="components/3.png" alt="论文图示" class="paper-hover-img">
+                        </div>
+                        <div class="paper-hover-body">
+                            <p class="paper-hover-abstract">本文提出多尺度融合反演（MFR）方法，利用静止卫星实现大范围实时风场反演。中尺度采用"云到风"Transformer模型提取精细风场特征，大尺度采用多编码器坐标U-Net融合多尺度信息。基于Himawari-8卫星一级数据（0–60°N、100–160°E，分辨率0.25°）的验证表明，单GPU秒级完成反演，风速平均绝对误差0.97 m/s，风向平均绝对误差23.31°，优于CFOSAT Level 2B风场产品，为大尺度格点预报模式提供初始场的新途径。</p>
+                            <a href="https://www.mdpi.com/2072-4292/17/4/610" target="_blank" class="paper-link">查看论文 →</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="paper-item">
-                    <span class="journal">IEEE J-STARS</span>
-                    <span class="paper-tag">SCI</span>
-                    <h3>Inpainting Radar Missing Data via Denoising Iterative Restoration</h3>
-                    <p class="authors">Wei Zhang, Xinyu Zhang, Zhuyu Jin, Youqi Wen, Jie Liu</p>
-                    <p class="paper-meta">IEEE J. Sel. Top. Appl. Earth Obs. Remote Sens., vol. 17, pp. 5302-5314, 2024
-                    </p>
-                    <a href="https://ieeexplore.ieee.org/document/10530050/" target="_blank" class="paper-link">查看论文
-                        →</a>
+
+                <!-- 论文4 -->
+                <div class="paper-card">
+                    <div class="paper-card-front">
+                        <div class="paper-card-front-body">
+                            <div class="paper-card-front-tags">
+                                <span class="journal">Ocean Engineering</span>
+                                <span class="paper-tag">SCI</span>
+                            </div>
+                            <h3>Development, pre-training, and fine-tuning of the CoordConv-Unet model for significant wave height retrieval from Himawari-8 satellite imagery</h3>
+                            <div class="paper-card-front-meta">
+                                <span class="authors">W Zhang, K. Fan, Z. Xu, Y. Gan*, Z. Gao*, and R. Pang</span>
+                                <span class="paper-meta">Ocean Engineering 348 (2026): 124045</span>
+                            </div>
+                        </div>
+                        <div class="paper-card-hint">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            <span>查看详情</span>
+                        </div>
+                    </div>
+                    <div class="paper-card-hover">
+                        <div class="paper-hover-img-wrap">
+                            <img src="components/4.png" alt="论文图示" class="paper-hover-img">
+                        </div>
+                        <div class="paper-hover-body">
+                            <p class="paper-hover-abstract">本研究开发了基于地球静止卫星的高精度有效波高（SWH）快速反演方法。CoordConvUnet模型融合地理坐标信息与Himawari-8卫星云图多尺度特征，结合预训练与微调策略显著提升反演精度与稳定性。针对西北太平洋（0–60°N、100–160°E）0.5°分辨率波场，测试站点SWH的平均绝对误差为0.341 m，均方根误差为0.491 m，优于HY-2B雷达高度计C波段产品，且连续覆盖能力显著优于极轨卫星数据。</p>
+                            <a href="https://www.sciencedirect.com/science/article/pii/S0029801825037278?via%3Dihub" target="_blank" class="paper-link">查看论文 →</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="paper-item">
-                    <span class="journal">Ocean Engineering</span>
-                    <span class="paper-tag">SCI</span>
-                    <h3>A Deep-Learning Real-Time Bias Correction Method for Significant Wave Height Forecasts in the
-                        Western North Pacific</h3>
-                    <p class="authors">Wei Zhang, Yu Sun, Yapeng Wu, Junyu Dong, Xiaojiang Song, Zhiyi Gao, Renbo Pang
-                    </p>
-                    <p class="paper-meta">Ocean Eng., vol. 283, 2023</p>
-                    <a href="https://www.sciencedirect.com/science/article/pii/S1463500323001294?via%3Dihub"
-                        target="_blank" class="paper-link">查看论文 →</a>
+
+                <!-- 论文5 -->
+                <div class="paper-card">
+                    <div class="paper-card-front">
+                        <div class="paper-card-front-body">
+                            <div class="paper-card-front-tags">
+                                <span class="journal">Atmospheric Research</span>
+                                <span class="paper-tag">SCI</span>
+                            </div>
+                            <h3>A deep learning method for real-time bias correction of wind field forecasts in the Western North Pacific</h3>
+                            <div class="paper-card-front-meta">
+                                <span class="authors">W Zhang, Y Jiang, J Dong*, X Song*, R Pang, B Guoan, H Yu</span>
+                                <span class="paper-meta">Atmospheric Research 284, 106586, 2023</span>
+                            </div>
+                        </div>
+                        <div class="paper-card-hint">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            <span>查看详情</span>
+                        </div>
+                    </div>
+                    <div class="paper-card-hover">
+                        <div class="paper-hover-img-wrap">
+                            <img src="components/5.png" alt="论文图示" class="paper-hover-img">
+                        </div>
+                        <div class="paper-hover-body">
+                            <p class="paper-hover-abstract">本研究提出MT-DETrajGRU模型，利用改进的"双编码器预报器"架构对ECMWF风场预报进行实时偏差订正。通过多任务学习损失函数，单一模型同时订正风速和风向，无需分别训练。在西北太平洋（2020年12月至2021年11月）的四季10天滚动订正实验中，风速和风向偏差分别降低8–11%和9–14%，且在正常天气与台风条件下性能相当，充分验证了模型的鲁棒性与泛化能力。</p>
+                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0169809522005725?via%3Dihub" target="_blank" class="paper-link">查看论文 →</a>
+                        </div>
+                    </div>
                 </div>
+
             </div>
             <div class="text-center" style="margin-top: 40px;">
                 <a href="https://scholar.google.com/citations?hl=en&user=3M2SK4YAAAAJ" target="_blank"

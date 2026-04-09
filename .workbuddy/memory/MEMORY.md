@@ -19,5 +19,10 @@
 - Logo 文件：`AIMM6.jpg`（精细圆形徽章设计，蓝色海洋/AI 主题）
 - 导航栏 Logo class：`.nav-logo-wrap`（52px 圆形）/ `.nav-logo-img`
 - Hero 布局 class：`.hero-logo-col`（左侧 Logo 列）/ `.hero-text-col`（右侧文字列）/ `.hero-logo-wrap`（280px 圆形）
-- 响应式断点：992px（平板折叠为垂直）、768px、480px
+- 论文卡片设计（2026-04-09）：
+  - 布局：单列横版卡片（每行1个，共5行），高度220px
+  - 图片悬停区：宽度380px，摘要字体0.92rem，行高1.75
+  - 响应式：992px → 图片280px / 卡片190px；480px → 图片170px / 卡片auto
+  - 双色边框：正面`border-left: 5px solid #0066cc`，悬停层`5px solid #0099ff`
+- 响应式断点：992px（平板）、768px、480px
 - 本地预览：`python -m http.server 3200`（端口 3200）

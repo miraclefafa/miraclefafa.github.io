@@ -1,0 +1,104 @@
+1:Abstract—Severe convective storms (SCSs) present significant
+threats due to their rapid onset and destructive potential.
+Accurate nowcasting is essential to reduce both societal and
+economic disruption. Traditional deep learning methods often
+fail to capture fine-scale structures or provide forecasts that are
+overly smoothed and lack physical realism. Recent generative
+models, including generative adversarial networks (GANs) and
+diffusion-based approaches, address some of these limitations but
+continue to struggle to maintain coherent storm morphology over
+time. This article introduces a novel two-stage framework for
+convective storm nowcasting that integrates deterministic fore
+casting with generative evolution. In the first stage, we propose a
+multiscale convolutional recurrent network (MS-CRN) that
+effectively captures both local and global weather patterns
+to predict short-term storm dynamics. By modeling the com
+plex interactions within small-scale meteorological phenomena
+while incorporating broader atmospheric trends, this approach
+substantially improves forecast accuracy. In the second stage, an
+edge-guided diffusion (EGD) model enhanced with edge-control
+refines the deterministic outputs, preserving storm boundaries
+and reducing blurring artifacts. Quantitative evaluations demon
+strate that the MS-CRN achieves a mean CSI of 0.3305 and
+a mean Heidke skill score (HSS) of 0.4358, outperforming
+strong baselines by 3.9% and 4.3%, respectively. The evolution
+stage further improves coarse-scale performance, yielding a
+mean CSI-pool (4 × 4) of 0.4085, which is 13.9% higher than
+previous generative methods, particularly under high-reflectivity
+thresholds. The EGD can be fine-tuned and transferred
+across forecasting models without retraining the full generative
+framework, demonstrating its adaptability and practical value
+for broad integration into nowcasting systems. The source code
+will be made publicly available (https://github.com/T-mac010203/
+MS-EdgeCast)
+2：A B S TRACT
+Addressing data gaps in meteorological radar scan regions remains a significant challenge. Existing radar data
+recovery methods tend to perform poorly under different types of missing data scenarios, often due to over
+smoothing. The actual scenarios represented by radar data are complex and diverse, making it difficult to
+simulate missing data. Recent developments in generative models have yielded new solutions for the problem
+of missing data in complex scenarios. Here, we propose a comprehensive inpainting diffusion model (CIDM) for
+weather radar data, which improves the sampling approach of the original diffusion model. This method utilises
+prior knowledge from known regions to guide the generation of missing information. The CIDM formalises
+domain knowledge into generative models, treating the problem of weather radar completion as a generative
+task, eliminating the need for complex data preprocessing. During the inference phase, prior knowledge of
+known regions guides the process and incorporates domain knowledge learned by the model to generate
+information for missing regions, thus supporting radar data recovery in scenarios with arbitrary missing
+data. Experiments were conducted on various missing data scenarios using Multi-Radar/MultiSensor System
+data sourced from the National Oceanic and Atmospheric Administration, and the results were compared
+with those of traditional and deep learning radar restoration methods. Compared with these methods, the
+CIDM demonstrated superior recovery performance for various missing data scenarios, particularly those with
+extreme amounts of missing data, in which the restoration accuracy was improved by 5%–35%. These results
+indicate the significant potential of the CIDM for quantitative applications. The proposed method showcases
+the capability of generative models in creating fine-grained data for remote sensing applications.
+3：Abstract: Wind field retrieval, a crucial component of weather forecasting, has been sig
+nificantly enhanced by recent advances in deep learning. However, existing approaches
+that are primarily focused on wind speed retrieval are limited by their inability to achieve
+real-time, full-coverage retrievals at large scales. To address this problem, we propose a
+novel multi-scale fusion retrieval (MFR) method, leveraging geostationary observation
+satellites. At the mesoscale, MFR incorporates a cloud-to-wind transformer model, which
+employs local self-attention mechanisms to extract detailed wind field features. At large
+scales, MFR incorporates a multi-encoder coordinate U-net model, which incorporates
+multiple encoders and utilises coordinate information to fuse meso- to large-scale features,
+enabling accurate and regionally complete wind field retrievals, while reducing the compu
+tational resources required. The MFR method was validated using Level 1 data from the
+Himawari-8 satellite, covering a geographic range of 0–60°N and 100–160°E, at a resolution
+of 0.25°. Wind field retrieval was accomplished within seconds using a single graphics
+processing unit. The mean absolute error of wind speed obtained by the MFR was 0.97 m/s,
+surpassing the accuracy of the CFOSAT and HY-2B Level 2B wind field products. The mean
+absolute error for wind direction achieved by the MFR was 23.31°, outperforming CFOSAT
+Level 2B products and aligning closely with HY-2B Level 2B products. The MFR represents
+a pioneering approach for generating initial fields for large-scale grid forecasting models.
+4：a b s t r a c t
+Significant wave height (SWH) is a crucial parameter in marine environmental monitoring, with substantial im
+plications for navigation, fisheries, and meteorological forecasting. However, traditional methods often struggle 
+with the multifaceted nature of oceanic processes, atmospheric interference, and other factors, making it difficult 
+to measure SWHs accurately. This study developed an efficient ocean wave height monitoring method designed to 
+generate high-precision wave height products for the north-western Pacific Ocean rapidly, based on geostationary 
+satellite data. We employed the CoordConvUnet model, which integrates geographic coordinate information and 
+multi-scale features from Himawari-8 satellite cloud images, and achieved large-scale, high-precision retrieval 
+of SWHs over the north-western Pacific Ocean. The incorporation of pre-training and fine-tuning strategies sig
+nificantly enhanced the accuracy and stability of the SWH retrievals. Experimental results demonstrated that 
+the proposed deep learning-based approach provided better accuracy than traditional methods, rapidly obtain
+ing SWH retrievals across a 0.5° wave field in the north-western Pacific Ocean (0-60°N, 100-160°E). The mean 
+absolute error for SWH retrievals at the test site was 0.341 m, and the root mean square error was 0.491 m. 
+These results surpassed the accuracy of the HY-2B radar altimeter C-band SWH product. Compared to HY-2B 
+polar orbit satellite data, the data produced by our model show significantly enhanced continuity and coverage, 
+and overcome the limitations associated with traditional polar orbit satellite data, which include an extended 
+acquisition period and sparse coverage. These advancements represent a new paradigm in ocean monitoring that 
+will facilitate more timely marine disaster warnings and more effective marine resource management.
+5:ABSTRACT  
+Forecasts by the European Centre for Medium-Range Weather Forecasts (ECMWF; EC for short) can provide a 
+basis for the establishment of maritime-disaster warning systems, but they contain some systematic biases. The 
+fifth-generation EC atmospheric reanalysis (ERA5) data have high accuracy, but are delayed by about 5 days. To 
+overcome this issue, a spatiotemporal deep-learning method could be used for nonlinear mapping between EC 
+and ERA5 data, which would improve the quality of EC wind forecast data in real time. In this study, we 
+developed the Multi-Task-Double Encoder Trajectory Gated Recurrent Unit (MT-DETrajGRU) model, which uses 
+an improved “double-encoder forecaster” architecture to model the spatiotemporal sequence of the U and V 
+components of the wind field; we designed a multi-task learning loss function to correct wind speed and wind 
+direction simultaneously using only one model. The study area was the western North Pacific (WNP), and real- 
+time rolling bias corrections were made for 10-day wind-field forecasts released by the EC between December 
+2020 and November 2021, divided into four seasons. Compared with the original EC forecasts, after correction 
+using the MT-DETrajGRU model the wind speed and wind direction biases in the four seasons were reduced by 
+8–11% and 9–14%, respectively. In addition, the proposed method modelled the data uniformly under different 
+weather conditions. The correction performance under normal and typhoon conditions was comparable, indi
+cating that the data-driven mode constructed here is robust and generalizable.  
